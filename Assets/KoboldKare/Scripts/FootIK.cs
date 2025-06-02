@@ -25,7 +25,7 @@ public class FootIK : MonoBehaviour {
             return;
         }
 
-        if (controlledByPlayer)                 //Moove all the stuff into PlayerPossetion script for synching.
+        if (controlledByPlayer)                 //Move all the stuff into PlayerPossetion script for synching.
         {
             SetFootTarget(FoxVRLoader.GetTrackedDeviceTRANSFORM(FoxVRLoader.XRDevice.LeftFeet), leftKnee, hips, targetAnimator, AvatarIKGoal.LeftFoot, AvatarIKHint.LeftKnee);
             SetFootTarget(FoxVRLoader.GetTrackedDeviceTRANSFORM(FoxVRLoader.XRDevice.RightFeet), rightKnee, hips, targetAnimator, AvatarIKGoal.RightFoot, AvatarIKHint.RightKnee);
